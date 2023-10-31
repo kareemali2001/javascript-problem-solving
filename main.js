@@ -200,9 +200,9 @@ for(var i =0;i<sentence.length;i++)
 
     }
 }
-console.log(i-count);
-console.log(count);
-console.log(vowel);
+console.log("number of letters in word:"+(i-count));
+console.log("number of spaces in sentence:"+count);
+console.log("number of vowels in sentence:"+vowel);
 
 
 
