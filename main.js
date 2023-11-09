@@ -184,25 +184,106 @@
 //       // code block
 //   }
 
-var sentence = prompt("Please enter a word:");
-var count=0;
-var letter=0;
-var vowel= false;
-for(var i =0;i<sentence.length;i++)
-{
-    if(sentence.charAt(i)== ' ' )
-    {
-        count++;
+// var sentence = prompt("Please enter a word:");
+// var count=0;
+// var letter=0;
+// var vowel= false;
+// for(var i =0;i<sentence.length;i++)
+// {
+//     if(sentence.charAt(i)== ' ' )
+//     {
+//         count++;
         
-    }  
-    if(sentence.charAt(i)=="a"||sentence.charAt(i)=="o"||sentence.charAt(i)=="u"||sentence.charAt(i)=="l"||sentence.charAt(i)=="i"){
-        vowel++;
+//     }  
+//     if(sentence.charAt(i)=="a"||sentence.charAt(i)=="o"||sentence.charAt(i)=="u"||sentence.charAt(i)=="l"||sentence.charAt(i)=="i"){
+//         vowel++;
 
+//     }
+// }
+// console.log("number of letters in word:"+(i-count));
+// console.log("number of spaces in sentence:"+count);
+// console.log("number of vowels in sentence:"+vowel);
+
+// var text = prompt("Enter text");
+// var i=0;
+// var wordCounter=1;
+
+// while (i< text.length) {
+//     var j=i;
+//     var charCounter=0;
+//     var vowelCounter=0;
+//     while (text[j]!=' ') {
+//         charCounter+=1;
+//         if(text[j]=="a"||text[j]=="o"||text[j]=="u"||text[j]=="l"||text[j]=="i"){
+//             vowelCounter+=1;
+//         }
+//         j+=1;
+//     }
+//     console.log("charCounter"+charCounter.toString());
+//     console.log("vowelCounter"+vowelCounter.toString());
+//     if (text[i]==' ') {
+//         wordCounter+=1;
+//     }
+//     console.log("wordCounter"+wordCounter.toString());
+//     console.log("------------------------------");
+//     i=j;
+// }
+
+// const array1 = new Array(3, 1, 7, 9);
+// const array2 = new Array(2, 4, 1, 9, 3);
+// var sum = 0;
+
+// for (var i = 0; i < array1.length; i++) {
+//     var found = false;
+//     for (var j = 0; j < array2.length; j++) {
+//         if (array1[i] == array2[j]) {
+//             found = true;
+//             break;
+//         }
+//     }
+
+//     if (!found) {
+//         sum += array1[i];
+//     }    
+    
+//     for (var k = 0; k < array2.length; k++) {
+//         var isInArray1 = false;
+//         if (array2[i] == array1[k]) {
+//             isInArray1 = true;
+//             break;
+//         }   
+//     }
+    
+//     if (!isInArray1) {
+//         sum += array2[i];
+//     }
+// }
+// console.log(sum);
+function dotproduct(array1, array2) {
+    const array3 = [];
+    var sum=0;
+
+    for (var i = 0; i < array1.length; i++) {
+        for (var j = 0; j < array2.length; j++) {
+            array3[i] = array1[i] * array2[j];
+
+        }
+        
     }
+
+    return array3;
 }
-console.log("number of letters in word:"+(i-count));
-console.log("number of spaces in sentence:"+count);
-console.log("number of vowels in sentence:"+vowel);
+
+const Array1 = [2, 4, 5];
+const Array2 = [2, 4, 5];
+
+console.log(dotproduct(Array1, Array2));
+
+
+
+
+
+
 
 
 
