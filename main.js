@@ -296,34 +296,72 @@
 // }
 // console.log(arr);
 
-const word = ["My", "Go", "Code","My","Go"];
+// const word = ["My", "Go", "Code","My","Go"];
 
 
-let frequency = {
-    Go : 3,
-    My : 2,
-    Code :1,
+// let frequency = {
+//     Go : 3,
+//     My : 2,
+//     Code :1,
 
-} 
+// } 
 
-function removeDuplicates(word) { 
-    let unique = []; 
-    word.forEach(element => { 
-        if (!unique.includes(element)) { 
-            unique.push(element); 
-        } 
-    }); 
-    return unique; 
-} 
+// function removeDuplicates(word) { 
+//     let unique = []; 
+//     word.forEach(element => { 
+//         if (!unique.includes(element)) { 
+//             unique.push(element); 
+//         } 
+//     }); 
+//     return unique; 
+// } 
 
-function compare(a,b)
-{
-    return frequency[b]-frequency[a];
+// function compare(a,b)
+// {
+//     return frequency[b]-frequency[a];
+// }
+
+
+// console.log(word.sort(compare) );
+// console.log(removeDuplicates(word));
+
+// var string = prompt("Enter a string:");
+// console.log(string);
+
+// function checker(string) {
+//     var regex = /^(.).*\1$/;
+
+//     if (regex.test(string)) {
+//         console.log("true");
+//     } else {
+//         console.log("false");
+//     }
+// }
+
+// checker(string);
+
+function isPalindrome(word) {
+    
+    if (word.length <= 1) {
+        return true;
+    }
+
+   
+    if (word[0] === word[word.length - 1]) {
+        return isPalindrome(word.slice(1, -1));
+    } else {
+        return false;
+    }
+}
+
+var userInput = prompt("Enter a word:").toLowerCase(); 
+if (isPalindrome(userInput)) {
+    console.log("It's a palindrome!");
+} else {
+    console.log("It's not a palindrome.");
 }
 
 
-console.log(word.sort(compare) );
-console.log(removeDuplicates(word));
 
 
 
