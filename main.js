@@ -259,25 +259,72 @@
 //     }
 // }
 // console.log(sum);
-function dotproduct(array1, array2) {
-    const array3 = [];
-    var sum=0;
+// function dotproduct(array1, array2) {
+//     const array3 = [];
+//     var sum=0;
 
-    for (var i = 0; i < array1.length; i++) {
-        for (var j = 0; j < array2.length; j++) {
-            array3[i] = array1[i] * array2[j];
-
-        }
+//     for (var i = 0; i < array1.length; i++) {
+//         for (var j = 0; j < array2.length; j++) {
+//             array3[i] = array1[i] * array2[j];
+           
+//         }
         
-    }
+//     }
+    
+//     return array3;
+// }
 
-    return array3;
+// const Array1 = [2, 4, 5];
+// const Array2 = [2, 4, 5];
+
+// console.log(dotproduct(Array1, Array2));
+
+// const arr = new Array(5,4,3,6,2,7,9,1,8,10);
+
+// let n = arr.length;
+
+// for (let i = 1; i < n; i++) {
+//     let key = arr[i];
+//     let j = i - 1;
+
+//     while (j >= 0 && arr[j] > key) {
+//         arr[j + 1] = arr[j];
+//         j = j - 1;
+//     }
+
+//     arr[j + 1] = key;
+// }
+// console.log(arr);
+
+const word = ["My", "Go", "Code","My","Go"];
+
+
+let frequency = {
+    Go : 3,
+    My : 2,
+    Code :1,
+
+} 
+
+function removeDuplicates(word) { 
+    let unique = []; 
+    word.forEach(element => { 
+        if (!unique.includes(element)) { 
+            unique.push(element); 
+        } 
+    }); 
+    return unique; 
+} 
+
+function compare(a,b)
+{
+    return frequency[b]-frequency[a];
 }
 
-const Array1 = [2, 4, 5];
-const Array2 = [2, 4, 5];
 
-console.log(dotproduct(Array1, Array2));
+console.log(word.sort(compare) );
+console.log(removeDuplicates(word));
+
 
 
 
