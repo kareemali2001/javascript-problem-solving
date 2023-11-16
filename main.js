@@ -259,6 +259,8 @@
 //     }
 // }
 // console.log(sum);
+
+
 // function dotproduct(array1, array2) {
 //     const array3 = [];
 //     var sum=0;
@@ -273,7 +275,7 @@
     
 //     return array3;
 // }
-
+// ---------------------------------------------------------------------------------------------------------------------------
 // const Array1 = [2, 4, 5];
 // const Array2 = [2, 4, 5];
 
@@ -295,7 +297,7 @@
 //     arr[j + 1] = key;
 // }
 // console.log(arr);
-
+// ------------------------------------------------------------------------------------------------------------------------
 // const word = ["My", "Go", "Code","My","Go"];
 
 
@@ -324,7 +326,7 @@
 
 // console.log(word.sort(compare) );
 // console.log(removeDuplicates(word));
-
+// ---------------------------------------------------------------------------------------------------------------
 // var string = prompt("Enter a string:");
 // console.log(string);
 
@@ -339,41 +341,111 @@
 // }
 
 // checker(string);
-
-function isPalindrome(word) {
+// -------------------------------------------------------------------------------------------------------------
+// function isPalindrome(word) {
     
-    if (word.length <= 1) {
-        return true;
-    }
+//     if (word.length <= 1) {
+//         return true;
+//     }
 
    
-    if (word[0] === word[word.length - 1]) {
-        return isPalindrome(word.slice(1, -1));
-    } else {
-        return false;
-    }
-}
+//     if (word[0] === word[word.length - 1]) {
+//         return isPalindrome(word.slice(1, -1));
+//     } else {
+//         return false;
+//     }
+// }
 
-var userInput = prompt("Enter a word:").toLowerCase(); 
-if (isPalindrome(userInput)) {
-    console.log("It's a palindrome!");
-} else {
-    console.log("It's not a palindrome.");
-}
-
-
-
+// var userInput = prompt("Enter a word:").toLowerCase(); 
+// if (isPalindrome(userInput)) {
+//     console.log("It's a palindrome!");
+// } else {
+//     console.log("It's not a palindrome.");
+// }
+// -------------------------------------------------------------------------------------------------------------------------
 
 
+// var day = prompt("enter day");
+// var month =prompt("enter month");
+// var year = prompt("enter year");
+
+
+// console.log(timeformilkandcookies(day,month));
+
+// function timeformilkandcookies(day,month)
+// {
+//     if (day==24&&month==11 )
+//     {
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+
+// --------------------------------------------------------------------------------------------------------------------
+
+// const user1=["samuel",24];
+// const user2=["joel",36];
+// const user3=["lily",24];
+
+// compareage(user1,user2);
 
 
 
 
+// function compareage(x,y){
+//     for(var i = 0 ; i< x.length;i++)
+//     {
+//         for(var k = 0 ; k< y.length;k++)
+
+//     if(x[1]>y[1])
+//     {
+//         console.log(x+" is older than "+y);
+
+//     }else if(x[1]==y[1])
+//     {
+//         console.log(x+" same age as "+y);
+//     }else if(x[1]<y[1])
+//     {
+//         console.log(y+" is older than "+x);
+//     }
+// }
 
 
+// }
+// --------------------------------------------------------------------------------------------------------------------------
+
+// const numbers=prompt([]).split(",").map(Number);
+
+// console.log(ispositivedominance(numbers))   ;
 
 
+// function ispositivedominance(numbers){
+//     var positive=0;
+//     var negative=0;
+//     var uniqueValues=[];
+//     for(var i =0 ; i<numbers.length;i++)
+//     {
+//         if(numbers[i]<0)
+//         {
+//             negative++;
+//         }
+//         else if(numbers[i]>0 &&!uniqueValues.includes(numbers[i]))
+//         {
+//             positive++;
+//             uniqueValues.push(numbers[i]);
+//         }
+        
 
+//     }
+//     if(positive>negative)
+//     {
+//         return true;    
+//     }else {
+//         return false;
+//     }
+    
+// }
 
 
 
